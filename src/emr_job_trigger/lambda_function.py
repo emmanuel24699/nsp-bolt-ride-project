@@ -16,7 +16,7 @@ S3_BUCKET_NAME = os.environ.get("S3_BUCKET_NAME")
 
 
 def lambda_handler(event, context):
-    # Generate unique job name with timestamp and UUID
+    # Generate unique job name with timestamp and UUIDs
     unique_id = (
         f"nsp_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{str(uuid.uuid4())[:8]}"
     )
