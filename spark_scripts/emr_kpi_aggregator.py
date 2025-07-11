@@ -56,7 +56,7 @@ if __name__ == "__main__":
         )
     )
 
-    # --- Write final report to S3, partitioned by the data's trip_date ---
+    # --- Write final report to S3, partitioned by the data's trip_date. ---
     (
         daily_kpis.repartition(1)
         .write.mode("overwrite")
