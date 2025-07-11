@@ -21,7 +21,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::123456789012:role/github-actions-deployer-role # <-- PASTE YOUR ROLE ARN
+          role-to-assume: arn:aws:iam::985539772768:role/github-actions-deployer-role
           aws-region: us-east-1
 
       - name: Deploy process-trip-start
