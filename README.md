@@ -46,12 +46,7 @@ The pipeline leverages a serverless, event-driven architecture to ensure scalabi
 
 ### High-Level Data Flow
 
-```
-[S3: Source CSVs] -> [Producer Script] -> [Kinesis Streams] -> [Processing Lambdas] -> [DynamoDB Table]
-                                                                                  |
-                                                                                  v
-[S3: Final KPI Report] <- [EMR Serverless Spark Job] <- [S3: Staged JSON Files] <- [Trigger Lambda] <- [DynamoDB Stream]
-```
+<img src='images/architecture_diagram.png'>
 
 ### Architectural Pattern
 
